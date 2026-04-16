@@ -8,6 +8,8 @@
 
 If you own a Copilot+ PC (AMD Ryzen AI, Intel Lunar Lake, or Snapdragon X) running Windows 11 24H2 or 25H2, you may have noticed multiple `WorkloadsSessionHost.exe` processes silently consuming anywhere from **2GB to 8GB of RAM** while doing absolutely nothing visible.
 
+https://www.youtube.com/watch?v=9Dbarfvg2BY
+
 These processes are part of Microsoft's Windows AI infrastructure — the backend that powers Recall, Click to Do, Live Captions, and other AI features. Windows spawns between 5 and 9 instances at startup and keeps them loaded in RAM indefinitely, pre-warming AI models so they respond instantly when called.
 
 The problem: **they never release that memory on their own**, even when idle. On machines with 16GB of RAM, this alone can push memory usage above 60% before you even open a browser.
